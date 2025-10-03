@@ -60,46 +60,40 @@ batsim({ imgsrc: 'https://example.com/bat.gif' });
 
 ```js
 batsim({ imgsrc: 'bat.gif', count: 25 });
+// Creates a swarm of 25 bats.
 ```
-
-Creates a swarm of 25 bats.
-
 
 ### Confined to an element
 
 ```js
 const box = document.getElementById('bat-zone');
+
 batsim({ imgsrc: 'bat.gif', count: 15, boundEl: box });
+// Bats will try to fly inside `#bat-zone`.
 ```
-
-Bats will try to fly inside `#bat-zone`.
-
 
 ### Uniform bat sizes
 
 ```js
 batsim({ imgsrc: 'bat.gif', count: 12, size: 64, random: false });
+// All bats are exactly `64px` wide.
 ```
-
-All bats are exactly `64px` wide.
 
 
 ### Faster bats
 
 ```js
 batsim({ imgsrc: 'bat.gif', minSpeed: 400, maxSpeed: 600 });
+// Bats zoom across the screen quickly (px per second).
 ```
-
-Bats zoom across the screen quickly.
 
 
 ### Delay before starting
 
 ```js
 batsim({ imgsrc: 'bat.gif', delay: 3000 });
+// Bats start appearing after 3s.
 ```
-
-Bats start appearing after **3 seconds**.
 
 
 ## Get Involved
