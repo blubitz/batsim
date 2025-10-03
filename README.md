@@ -41,6 +41,20 @@ Download [batsim.js](https://cdn.jsdelivr.net/gh/blubitz/batsim/batsim.js) to yo
 
 ```
 
+## 🔄 Return Value
+
+`batsim()` returns an **array of DOM elements**, one for each bat created.
+
+This allows you to directly manipulate or remove bats later if needed.
+
+Example:
+
+```js
+const bats = batsim({ imgsrc: 'bat.gif', count: 5 });
+
+// Hide the first bat
+bats[0].style.display = 'none';
+```
 
 ## Customization
 
