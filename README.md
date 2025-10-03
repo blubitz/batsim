@@ -4,7 +4,7 @@
   <img src="https://github.com/user-attachments/assets/42519624-d1d0-4bfb-b443-c70d5d8655f4" alt="My Image" width="300"/>
 </div>
 <div align="center">
-  <a href="">Demo</div>
+  <a href="https://blubitz.github.io/batsim/">Demo</div>
 </div>
 <br>
 <br>
