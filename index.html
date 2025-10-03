@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <style>
+        .halloween-ai-bg {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg,
+                    #1a0a00,
+                    /* dark night */
+                    #ff6f00,
+                    /* pumpkin orange */
+                    #ff00ff,
+                    /* neon purple AI */
+                    #00ffff
+                    /* neon cyan AI */
+                );
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        /* Smooth shifting gradient animation */
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="halloween-ai-bg"></div>
+
+    <script src="https://cdn.jsdelivr.net/gh/blubitz/batsim/batsim.min.js"></script>
+    <script>
+        batsim(null, 50);
+    </script>
+</body>
+
+</html>
