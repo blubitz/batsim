@@ -1,5 +1,14 @@
 # Bat Simulation JS
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/42519624-d1d0-4bfb-b443-c70d5d8655f4" alt="My Image" width="300"/>
+</div>
+<div align="center">
+  <a href="">Demo</div>
+</div>
+<br>
+<br>
+
 __Looking for an easy way to add some spooky flair to your website for Halloween?__
 
 With Halloween around the corner, it’s surprising there isn’t already a simple flying bat snippet for developers. That’s where `batsim.js` comes in — a configurable JS script that lets you add animated bats to your site and introduce just the right amount of seasonal disruption to your user experience.
