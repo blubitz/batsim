@@ -44,47 +44,63 @@ Download [batsim.js](https://cdn.jsdelivr.net/gh/blubitz/batsim/batsim.js) to yo
 
 ## Customization
 
-### Default usage – just call it!
+### Default usage
 
-```javascript
-batsim(); 
-// ✅ Shows default bats
+```js
+batsim();
 ```
 
-### Use a custom bat GIF
+### Changing bat image
 
-```javascript
-batsim('https://example.com/bat.gif'); 
-// ✅ Displays bats using your GIF
+```js
+batsim({ imgsrc: 'https://example.com/bat.gif' });
 ```
 
-### Change the number of bats
+### More bats
 
-```javascript
-batsim('https://example.com/bat.gif', 10); 
-// ✅ 10 bats will appear
+```js
+batsim({ imgsrc: 'bat.gif', count: 25 });
 ```
 
-### Restrict bats to a specific element
+Creates a swarm of 25 bats.
 
-```javascript
-batsim('https://example.com/bat.gif', 10, document.getElementById('myDiv')); 
-// ✅ Bats stay inside #myDiv
+
+### Confined to an element
+
+```js
+const box = document.getElementById('bat-zone');
+batsim({ imgsrc: 'bat.gif', count: 15, boundEl: box });
 ```
 
-### Resize bats
+Bats will try to fly inside `#bat-zone`.
 
-```javascript
-batsim('https://example.com/bat.gif', 10, document.getElementById('myDiv'), 50); 
-// ✅ Each bat is 50px
+
+### Uniform bat sizes
+
+```js
+batsim({ imgsrc: 'bat.gif', count: 12, size: 64, random: false });
 ```
 
-### Make all bats the same size (no randomness)
+All bats are exactly `64px` wide.
 
-```javascript
-batsim('https://example.com/bat.gif', 10, document.getElementById('myDiv'), 50, false); 
-// ✅ Uniform bat sizes
+
+### Faster bats
+
+```js
+batsim({ imgsrc: 'bat.gif', minSpeed: 400, maxSpeed: 600 });
 ```
+
+Bats zoom across the screen quickly.
+
+
+### Delay before starting
+
+```js
+batsim({ imgsrc: 'bat.gif', delay: 3000 });
+```
+
+Bats start appearing after **3 seconds**.
+
 
 ## Get Involved
 
